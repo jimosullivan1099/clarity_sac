@@ -144,7 +144,7 @@
     sql: ${TABLE}.chronic_5
 
   - dimension: chronic_homeless
-    hidden: true
+    label: 'pre-2014 Chronic Homeless'
     type: int
     sql: ${TABLE}.chronic_homeless
 

@@ -113,7 +113,9 @@
     
   - dimension: days_since_start
     label: 'Days in Project'
-    type: number
+    bypass_suggest_restrictions: true
+    suggest_dimension: 
+#     type: int
     sql: DATEDIFF(COALESCE(${end_date},NOW()),${start_date})
     
   - dimension: days_since_start_tier
@@ -171,6 +173,7 @@
   - dimension: enrollment_type
     label: 'Individual or Family '
     type: string
+    bypass_suggest_restrictions: true
     sql_case:
             Individual: ${type} = 1
             Family: ${type} = 2
