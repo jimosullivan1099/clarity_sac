@@ -146,7 +146,7 @@
   - dimension: chronic_homeless
     label: 'pre-2014 Chronic Homeless'
     type: int
-    sql: ${TABLE}.chronic_homeless
+    sql: fn_getPicklistValueName('chronic_homeless',${TABLE}.chronic_homeless)    
 
   - dimension: chronic_homeless_calculation
     sql: |
