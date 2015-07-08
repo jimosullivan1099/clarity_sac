@@ -229,8 +229,7 @@
     sql: ${TABLE}.health_dv
 
   - dimension: health_dv_occurred
-    type: int
-    sql: ${TABLE}.health_dv_occurred
+    sql: fn_getPicklistValueName('health_dv_occurred',${TABLE}.health_dv_occurred)   
 
   #- dimension: health_general
   #  type: int
