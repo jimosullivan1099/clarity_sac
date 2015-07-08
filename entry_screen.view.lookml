@@ -228,9 +228,9 @@
     type: yesno
     sql: ${TABLE}.health_dv
 
-  #- dimension: health_dv_occurred
-  #  type: int
-  #  sql: ${TABLE}.health_dv_occurred
+  - dimension: health_dv_occurred
+    type: int
+    sql: ${TABLE}.health_dv_occurred
 
   #- dimension: health_general
   #  type: int
